@@ -402,9 +402,9 @@ section {
         transition: 0.4s;
     }
 
-    header .container {
+    header nav .container {
         display: inline-block;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
     header li {
