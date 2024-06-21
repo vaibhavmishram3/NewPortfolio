@@ -204,12 +204,14 @@ section {
     padding: 15px 30px;
     border-radius: 10px;
     background-color: #77c4db8f;
+    cursor: pointer;
 }
 
 .first .down .download {
     background-color: #cf77db79;
     padding: 15px 30px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* #second {} */
@@ -241,12 +243,29 @@ section {
     /* border: 2px solid black; */
 }
 
-#second #container #box {
-    border-radius: 30px;
+#second #container .box {
+    /* border-radius: 30px; */
     margin-top: 3vw;
     height: 300px;
     width: 500px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+#second #container #box1 {
+    background-image: url("link logo/coffee_web.PNG");
+}
+#second #container #box2 {
+    background-image: url("link logo/tic_tac_toe.PNG");
+}
+#second #container #box3 {
+    background-image: url("link logo/weather_app.PNG");
+}
+#second #container #box4 {
+    background-image: url("link logo/youtube.PNG");
 }
 
 #third h2 {
@@ -322,17 +341,18 @@ section {
 }
 
 .right-Section div {
-    margin: 2vw;
-    font-size: 1.5vw;
+    margin: 1.7vw;
+    font-size: 1.8vw;
     display: flex;
     align-items: center;
 }
 
-.right-Section div img {
-    width: 3vw;
-    color: black;
-    background-color: black;
-    margin-right: 2vw;
+.right-Section div i {
+    /* width: 3vw; */
+    font-size: 2.2vw;
+    /* color: rgb(28, 28, 28); */
+    /* background-color: black; */
+    /* margin-right: 2vw; */
     aspect-ratio: 3/2;
     object-fit: contain;
 }
@@ -346,31 +366,52 @@ section {
 .left-Section input[type="text"],
 .left-Section input[type="email"],
 .left-Section textarea {
-    width: 80%;
-    height: 2vw;
-    border-radius: 10px;
-    padding: 0 1.5vw;
-    font-size: 1.2vw;
+    width: 120%;
+    height: 3vw;
+    /* border-radius: 10px; */
+    padding: 0 .5vw;
+    font-size: 1.4vw;
     border: none;
     color: black;
     background-color: rgb(192, 192, 192);
 }
 
 .left-Section textarea {
-    height: 5vw;
+    height: 9vw;
     resize: none;
 }
 
 .left-Section button {
     width: 20%;
+    border: none;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    padding: .8vw 0;
-    border-radius: 10px;
-    background-color: transparent;
+    padding: .5vw 0;
+    border-radius: 5px;
+    /* background-color: transparent; */
     cursor: pointer;
-    font-size: 1.2vw;
-
+    font-size: 1.4vw;
+    transition: .3s all ease-in-out;
 }
+
+.left-Section button:hover {
+    color: #000;
+    background: rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:800px) {
     .overlay a {
@@ -467,6 +508,7 @@ section {
         width: 100%;
         line-height: 9vw;
         margin-bottom: 10vw;
+        /* font-size: 2vw; */
     }
 
     .first .down {
@@ -528,12 +570,16 @@ section {
         /* border: 2px solid black; */
     }
 
-    #second #container #box {
-        border-radius: 30px;
+    #second #container .box {
+        /* border-radius: 30px; */
         margin-top: 3vw;
-        height: 300px;
-        width: 500px;
-        border: 2px solid black;
+        height: 47vw;
+        width: 88vw;
+        /* border: 2px solid black; */
+    }
+
+    #second #container #box{
+
     }
 
 
@@ -575,7 +621,7 @@ section {
 
     #fourth h1 {
         text-align: center;
-        font-size: 12vw;
+        font-size: 10vw;
         font-weight: 600;
     }
 
@@ -586,7 +632,7 @@ section {
 
     #fourth #box p {
         text-align: center;
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .contactSection {
@@ -612,14 +658,14 @@ section {
     }
 
     .left-Section h1 {
-        font-size: 9vw;
+        font-size: 8vw;
         text-align: center;
         margin-bottom: 3vw;
     }
 
     .left-Section span {
         text-align: center;
-        font-size: 6vw;
+        font-size: 4vw;
         margin-bottom: 4vw;
     }
 
@@ -643,11 +689,12 @@ section {
         align-items: center;
     }
 
-    .right-Section div img {
-        width: 8vw;
-        color: black;
-        background-color: black;
-        margin-right: 2vw;
+    .right-Section div i {
+        /* width: 8vw; */
+        font-size: 6vw;
+        /* color: black; */
+        /* background-color: black; */
+        /* margin-right: 2vw; */
         aspect-ratio: 3/2;
         object-fit: contain;
     }
@@ -664,7 +711,7 @@ section {
     .left-Section input[type="email"] {
         width: 100%;
         height: 7vh;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         padding: 0 1.5vw;
         font-size: 5vw;
         border: none;
@@ -673,7 +720,7 @@ section {
     }
 
     .left-Section textarea {
-        padding: 3vw 1.5vw;
+        padding: 2vw 1.5vw;
         font-size: 5vw;
         height: 18vh;
         width: 100%;
@@ -681,11 +728,11 @@ section {
     }
 
     .left-Section button {
-        width: 40%;
+        width: 30%;
         text-align: center;
-        padding: 3vw 0;
-        border-radius: 10px;
-        background-color: transparent;
+        padding: 2.2vw 0;
+        border-radius: 5px;
+        /* background-color: transparent; */
         cursor: pointer;
         font-size: 5vw;
 
