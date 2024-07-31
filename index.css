@@ -234,12 +234,33 @@ section {
 #second h3 {
     margin-top: 5vw;
 }
-
-#second a {
+#second #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second #btn a{
+    margin-top: 5vw;
     font-size: 2vw;
-    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(153, 153, 153);
     text-decoration: none;
     color: black;
+    transition: .3s all ease-in-out;
+}
+#second #btn a:hover{
+    scale: 1.2;
+}
+
+#second a button{
+    margin: 2px;
+    padding: 3vw 3vw;
+    border-radius: 50%;
+    /* font-size: 2vw; */
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #second h2 {
@@ -515,15 +536,15 @@ section {
 
     .first .mid h2 {
         width: 100%;
-        padding: 2vw 5vw;
-        font-size: 6.5vw;
+        padding: 5vw 0vw;
+        font-size: 9.1vw;
     }
 
     .first .mid p {
         width: 100%;
         line-height: 9vw;
         margin-bottom: 10vw;
-        /* font-size: 2vw; */
+        font-size: 3.9vw;
     }
 
     .first .down {
@@ -562,7 +583,7 @@ section {
         margin-top: 5vw;
     }
 
-    #second a {
+    #second a div{
         font-size: 6vw;
         text-align: center;
         text-decoration: none;
@@ -592,6 +613,8 @@ section {
         width: 88vw;
         /* border: 2px solid black; */
     }
+
+    
 
 
 
